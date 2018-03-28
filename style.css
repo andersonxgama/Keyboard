@@ -1,0 +1,87 @@
+body
+{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+#principal
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 80%;
+}
+
+#txt_container
+{
+    height: 125px;
+    width: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#txt_teste
+{
+    height: 25px;
+    width: 30%;
+    border-radius: 5px;
+}
+
+#teclado_container
+{
+    background-color: #494949;
+    width: 70%;
+    padding: 0.5em;
+    border-radius: 5px;
+    border: 3px solid #2d2d2d;
+}
+
+.linha_teclado
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.estilo_tecla
+{
+    background-color: #3a3a3a;
+    border: 3px solid #2d2d2d;
+    margin: 2px;
+    height: 50px;
+    width: 7%;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 22px;
+}
+
+#backspace
+{
+    width: 13%;
+}
+
+.estilo_tecla:active
+{
+    background-color: #2d2d2d;
+    border: 3px solid #1d1d1d;
+}
+
+span
+{
+    padding: 3px;
+}
+
+@media only screen and (max-width: 500px)
+{
+    .estilo_tecla
+    {
+        font-size: 4vw;
+        border: 1px solid #2d2d2d;
+        width: 8%;
+    }
+}
